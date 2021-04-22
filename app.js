@@ -8,15 +8,15 @@ class Portfolio {
         this.contactPage = document.getElementById("contactPage");
 
         this.typoAnimate = document.getElementById("typoAnimate");
-        console.log(this);
+        // console.log(this);
     }
-    /* leftNavbarShowHide() {
+    leftNavbarShowHide() {
         if (this.hiddenLeftNavbar.style.display === "none") {
             this.hiddenLeftNavbar.style.display = 'block';
         } else {
             this.hiddenLeftNavbar.style.display = 'none';
         }
-    } */
+    }
     ShowTab(props) {
         props.classList.replace("d-none", "d-block");
     }
@@ -77,6 +77,7 @@ class Portfolio {
         }
     }
 }
+
 function addListeners() {
     const portFolioObj = new Portfolio();
     const bTn = {
@@ -86,14 +87,32 @@ function addListeners() {
         infoBtn: document.getElementById("infoBtn"),
         contactBtn: document.getElementById("contactPageBtn")
     }
-    bTn.homeBtn.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.ShowHomePage(); });
-    bTn.profileBtn.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.ShowProfilePage(); });
-    bTn.resumeBtn.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.ShowResumePage(); });
-    bTn.infoBtn.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.ShowInfoPage(); });
-    bTn.contactBtn.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.ShowContactPage(); });
+    bTn.homeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.ShowHomePage();
+    });
+    bTn.profileBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.ShowProfilePage();
+    });
+    bTn.resumeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.ShowResumePage();
+    });
+    bTn.infoBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.ShowInfoPage();
+    });
+    bTn.contactBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.ShowContactPage();
+    });
 
     const typoClick = document.getElementById("typoAnimate");
-    typoClick.addEventListener("click", (e) => { e.preventDefault(); portFolioObj.StopTypo(); });
+    typoClick.addEventListener("click", (e) => {
+        e.preventDefault();
+        portFolioObj.StopTypo();
+    });
 
 }
 class DirectScript extends Portfolio {
@@ -110,4 +129,3 @@ document.addEventListener("DOMContentLoaded", () => {
     const DirScriptObj = new DirectScript();
     DirScriptObj.AutoHomePage(); //call direct srcipt on load
 });
-
