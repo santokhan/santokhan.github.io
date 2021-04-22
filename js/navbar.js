@@ -16,3 +16,4 @@ function navbarListeners() {
 }
 document.addEventListener("DOMContectLoaded", () => { navbarListeners(); });
 console.log("I have create a json file.");
+console.log("I have create a json file.2");
