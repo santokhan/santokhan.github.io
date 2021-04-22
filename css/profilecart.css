@@ -50,14 +50,14 @@
     display: none !important;
 }
 
+.copyright {
+    display: block;
+}
+
 @media (min-width:786px) {
     .social-link-text {
         display: block !important;
     }
-}
-
-.copyright {
-    display: block;
 }
 
 @media (max-width:576px) {
