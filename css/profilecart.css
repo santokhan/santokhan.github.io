@@ -46,6 +46,16 @@
     animation: linkhover 1s ease-out forwards;
 }
 
+.social-link-text {
+    display: none !important;
+}
+
+@media (min-width:786px) {
+    .social-link-text {
+        display: block !important;
+    }
+}
+
 .copyright {
     display: block;
 }
