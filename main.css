@@ -1,0 +1,28 @@
+/* @import "css/profilepic.css"; */
+@import "css/profilecart.css";
+@import "css/rightlayout.css";
+@import "css/home.css";
+@import "css/profile.css";
+@import "css/contact.css";
+/* @import "css/scrollbar.css"; */
+@import "css/keyframes.css";
+@import "css/iconstyle.css";
+/* never use spacing in last */
+@import "css/spacing.css";
+@import "css/breakpoint.css";
+
+:root {
+    --fb: #3b5998;
+    --twi: #00acee;
+    --ins: #00acee;
+    --yt: #ff0000;
+    --wh: hsl(0, 0%, 100%);
+    --bl: hsl(0, 0%, 0%);
+    --sdw: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}

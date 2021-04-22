@@ -1,0 +1,19 @@
+.fa-facebook-f:hover {
+    color: var(--fb);
+}
+
+.fa-twitter:hover {
+    color: var(--twi);
+}
+
+.fa-instagram:hover {
+    color: var(--ins);
+}
+
+.fa-linkedin:hover {
+    color: var(--fb);
+}
+
+.fa-youtube:hover {
+    color: var(--yt);
+}
