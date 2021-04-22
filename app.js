@@ -8,7 +8,7 @@ class Portfolio {
         this.contactPage = document.getElementById("contactPage");
 
         this.typoAnimate = document.getElementById("typoAnimate");
-        //console.log(this);
+        console.log(this);
     }
     /* leftNavbarShowHide() {
         if (this.hiddenLeftNavbar.style.display === "none") {
