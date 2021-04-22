@@ -1,49 +1,49 @@
 .profile-cart {
-    position: relative;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    box-shadow: 0px 3px 5px var(--sdw);
+    position: relative !important;
+    height: 100vh !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    box-shadow: 0px 3px 5px var(--sdw) !important;
 }
 
 .profile-pic {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    border-radius: 100%;
-    border: 6px solid transparent;
-    box-shadow: 0 0 0 3px #ffffff;
-    filter: brightness(60%);
-    z-index: 1050;
+    position: relative !important;
+    width: 14vw !important;
+    height: 14vw !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+    border-radius: 100% !important;
+    border: 6px solid transparent !important;
+    box-shadow: 0 0 0 3px #ffffff !important;
+    filter: brightness(60%) !important;
+    z-index: 1050 !important;
 }
 
 .profile-pic:hover {
-    animation: brighten 1s ease-out forwards;
+    animation: brighten 1s ease-out forwards !important;
 }
 
 .profile-pic img {
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .navbar-link table {
-    width: 100%;
+    width: 100% !important;
 }
 
 .navbar-link table tbody tr td:first-child {
-    width: 20%;
+    width: 20% !important;
 }
 
 .navbar-link table tbody tr:active {
-    color: #000000;
-    background-color: #000;
+    color: #000000 !important;
+    background-color: #000 !important;
 }
 
 .navbar-link table tbody tr:hover {
-    color: #efefef;
-    animation: linkhover 1s ease-out forwards;
+    color: #efefef !important;
+    animation: linkhover 1s ease-out forwards !important;
 }
 
 .social-link-text {
@@ -51,17 +51,5 @@
 }
 
 .copyright {
-    display: block;
-}
-
-@media (min-width:786px) {
-    .social-link-text {
-        display: block !important;
-    }
-}
-
-@media (max-width:576px) {
-    .profile-cart {
-        position: fixed;
-    }
+    display: block !important;
 }
