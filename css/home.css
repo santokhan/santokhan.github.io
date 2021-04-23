@@ -1,6 +1,10 @@
 .right-layout .banner-img {
     position: relative;
     height: 100vh;
+    background-image: url(https://lh3.googleusercontent.com/ErRIidmqgG5bZyqQUgPy8btNkSgqF_DH8HIPddiuDCqckl0n0HuFPvkagE93FLsRZNuPbTkJuJ5LoT-kpiU7jmbPUzfriV7vGcCtpGWTokxfRlaaojYOBrBTmi-8PprNtijKF6gIqOyg878jQ2ZxRYKV5eEmw5yME1TXybt3heHa_7Szqs2J9IVJeYVWfmfSkWostUDgkV89RKNwgw9GQSj7Na3ZIVodYTordq_US5hlKPYdIwr_dSSqkJDlvgsqmPrHuanQ7r8kUG_sIVoxz_nYjmcYgQMnOLTWjwJNuxOShHLlUPKj64IcO0DKODMNjJk_LQ0Y2dEO8XXKNuDXOCPMA1P1cIG4kB2GVrbnNqYoVl06Vfg0sVSbL7oNzcLiQtpjMSRMsbnkLK3OtTU2IcYZ4MP5Cem4kPlS6imPNKXOyGEn84iPkMDRnLWrfja6aHZsSuuSsldRNgjms9H14Ek8ADZsLSNKzJqBidBN-aCOxHWkF6N5_HkBRevmceUoQknufr0TxRjsd2H8dmD-bKrxkU2mmFZ2vh-xIKZA509GLZzdMv5cK8e76dBazeroFUO5ehnesrqMULW0WKysEeHQBP9IyBDaEa3eZKI2D9BubtowIb5s2n5mTHRh5mgJYdfbUx6FRTOspGPwkz7SvMQP40ZquDDDtqP1h9e2a9NWAno_SmT4Xx8eaQ_7pySPiJIg8jJzi4SC0XGqbpFM5U2B=w1440-h811-no?authuser=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .right-layout .banner-img img {
