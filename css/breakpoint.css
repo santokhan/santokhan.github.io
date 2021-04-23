@@ -1,17 +1,11 @@
-/* This css will working before crossing to less than 1400px */
-@media(min-width:1400px) {
+@media(min-width: 992px) {
     .santo {
         font-size: 2rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 2rem !important;
     }
-}
-
-@media(min-width:1200px) {
-
     .photo-left,
     .photo-right {
         position: relative;
@@ -19,47 +13,32 @@
         overflow-x: hidden;
         overflow-y: hidden;
     }
-}
-
-@media(min-width: 992px) {
     .hidden-left-bar .fa-times {
         position: absolute;
         right: 10%;
         top: 15vh;
     }
-
-}
-
-@media(min-width:768px) {}
-
-@media(min-width:576px) {
-
-
     /* Hidden Left Navbar */
     .hidden-left-bar-sm {
         width: 40% !important;
         padding-left: 8%;
     }
-
     .hidden-left-bar ul li a {
         font-size: 1.75rem;
     }
 }
 
 
-
-
 /* Max width */
+
 @media(max-width:1399.9px) {
     .santo {
         font-size: 2rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 2rem !important;
     }
-
 }
 
 @media(max-width:1199.9px) {
@@ -67,7 +46,6 @@
         font-size: 1.75rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 1.75rem !important;
     }
@@ -78,7 +56,6 @@
         font-size: 1.5rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 1.5rem !important;
     }
@@ -89,7 +66,6 @@
         font-size: 1.25rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 1.25rem !important;
     }
@@ -100,7 +76,6 @@
         font-size: 1.25rem !important;
         font-weight: bold;
     }
-
     .khan {
         font-size: 1.25rem !important;
     }
