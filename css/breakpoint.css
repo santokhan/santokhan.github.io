@@ -1,84 +1,65 @@
 /* This css will working before crossing to less than 1400px */
-
 @media(min-width:1400px) {
     .santo {
         font-size: 2rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 2rem !important;
     }
 }
 
 @media(min-width:1200px) {
+
     .photo-left,
     .photo-right {
-        position: relative !important;
-        height: 95vh !important;
-        overflow-x: hidden !important;
-        overflow-y: hidden !important;
+        position: relative;
+        height: 95vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
 }
 
 @media(min-width: 992px) {
     .hidden-left-bar .fa-times {
-        position: absolute !important;
-        right: 10% !important;
-        top: 15vh !important;
+        position: absolute;
+        right: 10%;
+        top: 15vh;
     }
+
 }
 
-@media(min-width:768px) {
-    .social-link-text {
-        display: block !important;
-    }
-}
+@media(min-width:768px) {}
 
 @media(min-width:576px) {
-    .profile-cart {
-        position: fixed !important;
-        height: 100vh !important;
-        overflow-x: hidden !important;
-        overflow-y: auto !important;
-        box-shadow: 0px 3px 5px var(--sdw) !important;
-        z-index: 1012 !important;
-    }
-    .profile-pic {
-        position: relative !important;
-        width: 3vw !important;
-        height: 3vw !important;
-        overflow-x: hidden !important;
-        overflow-y: hidden !important;
-        border-radius: 100% !important;
-        border: 6px solid transparent !important;
-        box-shadow: 0 0 0 3px #ffffff !important;
-        filter: brightness(60%) !important;
-        z-index: 1050 !important;
-    }
-    .profile-cart {
-        position: fixed !important;
-    }
+
+
     /* Hidden Left Navbar */
     .hidden-left-bar-sm {
         width: 40% !important;
-        padding-left: 8% !important;
+        padding-left: 8%;
     }
+
     .hidden-left-bar ul li a {
-        font-size: 1.75rem !important;
+        font-size: 1.75rem;
     }
 }
 
 
-/* Max width */
 
+
+/* Max width */
 @media(max-width:1399.9px) {
     .santo {
         font-size: 2rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 2rem !important;
     }
+
 }
 
 @media(max-width:1199.9px) {
@@ -86,6 +67,7 @@
         font-size: 1.75rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 1.75rem !important;
     }
@@ -96,6 +78,7 @@
         font-size: 1.5rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 1.5rem !important;
     }
@@ -106,6 +89,7 @@
         font-size: 1.25rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 1.25rem !important;
     }
@@ -116,6 +100,7 @@
         font-size: 1.25rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 1.25rem !important;
     }
