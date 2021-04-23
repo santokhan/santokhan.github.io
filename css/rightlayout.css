@@ -1,0 +1,18 @@
+.right-layout {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.typo-animate {
+    position: absolute;
+    width: 0;
+    animation-delay: 3s;
+    animation: typo 3s infinite;
+    overflow: hidden;
+    border-right: 3px solid var(--wh);
+}
+
+.typo-animate-stop {
+    position: relative;
+}

@@ -1,0 +1,21 @@
+.svg-background-01 {
+    position: relative;
+    height: 100vh;
+    padding: 5rem;
+    background-image: url(../images/contact-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.svg-background-01 .contact-details {
+    padding-left: 2rem;
+}
+
+.svg-background-01 table {
+    color: #fff;
+}
+
+.svg-background-01 .icons {
+    color: #fff;
+}
