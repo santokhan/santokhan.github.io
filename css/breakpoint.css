@@ -38,57 +38,7 @@
     .hidden-left-bar ul li a {
         font-size: 1.75rem;
     }
-}
-
-
-/* Max width */
-
-@media(max-width:1399.9px) {
-    .santo {
-        font-size: 2rem !important;
-        font-weight: bold;
-    }
-    .khan {
-        font-size: 2rem !important;
-    }
-}
-
-@media(max-width:1199.9px) {
-    .santo {
-        font-size: 1.75rem !important;
-        font-weight: bold;
-    }
-    .khan {
-        font-size: 1.75rem !important;
-    }
-}
-
-@media(max-width:991.9px) {
-    .santo {
-        font-size: 1.5rem !important;
-        font-weight: bold;
-    }
-    .khan {
-        font-size: 1.5rem !important;
-    }
-}
-
-@media(max-width:767.9px) {
-    .santo {
-        font-size: 1.25rem !important;
-        font-weight: bold;
-    }
-    .khan {
-        font-size: 1.25rem !important;
-    }
-}
-
-@media(max-width:575.9px) {
-    .santo {
-        font-size: 1.25rem !important;
-        font-weight: bold;
-    }
-    .khan {
-        font-size: 1.25rem !important;
+    .copyright {
+        display: none;
     }
 }
