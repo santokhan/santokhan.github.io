@@ -1,12 +1,12 @@
 .banner-img {
-    position: relative !important;
-    width: 100vw !important;
-    overflow-x: hidden !important;
+    position: relative;
+    width: 100vw;
 }
 
 .right-layout .banner-img h1 {
-    position: absolute !important;
-    left: 30% !important;
-    top: 40% !important;
-    transform: translateX(-50%) !important;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    /* transform: translateY(-50%); */
+    transform: translateX(-50%);
 }
