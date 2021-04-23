@@ -89,7 +89,7 @@ class Portfolio {
 function addListeners() {
     const portFolioObj = new Portfolio();
     const bTn = {
-        menuBarBtn: document.getElementById("menuIcon");
+        menuBarBtn: document.getElementById("menuIcon"),
         homeBtn: document.getElementById("homePageBtn"),
         profileBtn: document.getElementById("profileBtn"),
         resumeBtn: document.getElementById("resumeBtn"),
