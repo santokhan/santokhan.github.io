@@ -1,12 +1,15 @@
-.banner-img {
+.right-layout .banner-img {
     position: relative;
-    width: 100vw;
+    height: 100vh;
+}
+
+.right-layout .banner-img img {
+    height: 100vh;
 }
 
 .right-layout .banner-img h1 {
     position: absolute;
     left: 30%;
     top: 40%;
-    /* transform: translateY(-50%); */
     transform: translateX(-50%);
 }
