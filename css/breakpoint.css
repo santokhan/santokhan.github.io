@@ -38,6 +38,9 @@
     .hidden-left-bar ul li a {
         font-size: 1.75rem;
     }
+    /* .social-icon div a {
+        visibility: visible;
+    } */
     .copyright {
         display: none;
     }
