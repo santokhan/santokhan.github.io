@@ -48,8 +48,8 @@
 }
 
 .navbar-link table tbody tr td:first-child {
-    width: 20%;
     /* Navbar table width*/
+    width: 20%;
 }
 
 .navbar-link table tbody tr:active {
