@@ -11,13 +11,20 @@
         animation: hide-profile-cart 1s ease-in;
         animation-fill-mode: forwards;
     }
+
+    #menuIcon {
+        display: none;
+    }
+
     .santo {
         font-size: 2rem !important;
         font-weight: bold;
     }
+
     .khan {
         font-size: 2rem !important;
     }
+
     .photo-left,
     .photo-right {
         position: relative;
@@ -25,23 +32,21 @@
         overflow-x: hidden;
         overflow-y: hidden;
     }
+
     .hidden-left-bar .fa-times {
         position: absolute;
         right: 10%;
         top: 15vh;
     }
-    /* Hidden Left Navbar */
+
+
     .hidden-left-bar-sm {
+        /* Hidden Left Navbar */
         width: 40% !important;
         padding-left: 8%;
     }
+
     .hidden-left-bar ul li a {
         font-size: 1.75rem;
-    }
-    /* .social-icon div a {
-        visibility: visible;
-    } */
-    .copyright {
-        display: none;
     }
 }
