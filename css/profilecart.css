@@ -5,6 +5,7 @@
     color: #ffffff !important;
     padding: 1rem;
     border-radius: 0.25rem;
+    display: block;
     z-index: 3000;
 }
 
@@ -42,17 +43,13 @@
     height: auto;
 }
 
-
-/* .social-icon div a {
-    visibility: hidden;
-} */
-
 .navbar-link table {
     width: 100%;
 }
 
 .navbar-link table tbody tr td:first-child {
     width: 20%;
+    /* Navbar table width*/
 }
 
 .navbar-link table tbody tr:active {
@@ -63,8 +60,4 @@
 .navbar-link table tbody tr:hover {
     color: #efefef;
     animation: linkhover 1s ease-out forwards;
-}
-
-.copyright {
-    display: block;
 }
