@@ -1,7 +1,7 @@
 .right-layout {
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .typo-animate {
@@ -15,4 +15,23 @@
 
 .typo-animate-stop {
     position: relative;
+}
+
+/*
+ *  STYLE 1
+ */
+.right-layout::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background: transparent;
+}
+
+.right-layout::-webkit-scrollbar {
+    width: 6px;
+    background: none;
+}
+
+.right-layout::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0, 0.3);
+    background-color: #555555;
 }
