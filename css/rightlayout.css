@@ -30,6 +30,6 @@
 
 .right-layout::-webkit-scrollbar-thumb {
     border-radius: 6px;
-    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0, 0.3);
     background-color: #555555;
 }
