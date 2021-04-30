@@ -10,6 +10,7 @@
 /* never use spacing in last */
 @import "css/spacing.css";
 @import "css/breakpoint.css";
+@import "css/ads.css";
 
 :root {
     --fb: #3b5998;
