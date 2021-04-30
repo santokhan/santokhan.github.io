@@ -17,9 +17,7 @@
     position: relative;
 }
 
-/*
- *  STYLE 1
- */
+/* STYLE 1 */
 .right-layout::-webkit-scrollbar-track {
     border-radius: 6px;
     background: transparent;
