@@ -22,31 +22,97 @@
     8% {
         width: 8%;
     }
+
     16% {
         width: 18%;
     }
+
     24% {
         width: 25%;
     }
+
     32% {
         width: 32%;
     }
+
     40% {
         width: 34%;
     }
+
     48% {
         width: 42%;
     }
+
     56% {
         width: 50%;
     }
+
     64% {
         width: 56%;
     }
+
     72% {
         width: 61%;
     }
+
     80% {
         width: 64%;
     }
 }
+
+@keyframes range-slide {
+    0% {
+        width: 0%;
+    }
+}
+
+/* @keyframes conic-gradient-slide {
+    0% {
+        background: conic-gradient(#ff9900 0%, #ffffff 0);
+    }
+
+    5% {
+        background: conic-gradient(#ff9900 5%, #ffffff 0);
+    }
+
+    10% {
+        background: conic-gradient(#ff9900 10%, #ffffff 0);
+    }
+
+    15% {
+        background: conic-gradient(#ff9900 15%, #ffffff 0);
+    }
+
+    20% {
+        background: conic-gradient(#ff9900 20%, #ffffff 0);
+    }
+
+    25% {
+        background: conic-gradient(#ff9900 25%, #ffffff 0);
+    }
+
+    30% {
+        background: conic-gradient(#ff9900 30%, #ffffff 0);
+    }
+
+    35% {
+        background: conic-gradient(#ff9900 35%, #ffffff 0);
+    }
+
+    40% {
+        background: conic-gradient(#ff9900 40%, #ffffff 0);
+    }
+
+    45% {
+        background: conic-gradient(#ff9900 45%, #ffffff 0);
+    }
+
+    50% {
+        background: conic-gradient(#ff9900 50%, #ffffff 0);
+    }
+
+    75%,
+    100% {
+        background: conic-gradient(#ff9900 75%, #ffffff 0);
+    }
+} */
