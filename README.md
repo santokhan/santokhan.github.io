@@ -1,4 +1,4 @@
-You are watching my first repository on Github.
+In this repository you are watching an amazing personal porfolio. You can use this template to create your personal porfolio. It is very easy and quick. First of all clone my repository and then make samne important changes.
 
 Click here to visit my repository page https://santokhan.github.io/
 
