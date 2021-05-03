@@ -19,7 +19,7 @@ Click here to visit my repository page https://santokhan.github.io/
 
 
 Preview: 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](/images/santo-2.png)
 ![Alt Text](https://raw.githubusercontent.com/santokhan/santokhan.github.io/main/images/santo-2.png)
 
 
