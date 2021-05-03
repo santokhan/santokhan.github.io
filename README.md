@@ -6,7 +6,7 @@ Click here to visit my repository page https://santokhan.github.io/
 | ----- | ------ |
 | Hello | I am Santo Khan |
 
-##### My Skills:
+#### My Skills:
 * HTML
 * CSS
 * Bootstrap
