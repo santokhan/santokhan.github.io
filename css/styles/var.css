@@ -1,0 +1,71 @@
+/* ____________Global___________ */
+
+:root {
+    --section-height: 100vh;
+}
+
+
+/* _____________Default_____________ */
+
+:root {
+    --poppins: "Poppins", sans-serif;
+    --bg-page: #ffffff;
+    --txt-color: #090F20;
+    --nav-link: #090F20;
+    --nav-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    --sub-title: #555555;
+    --banner-txt: #4070F4;
+    --social-icon-txt: #090F20;
+    --social-icon-txt-hover: hsl(224, 56%, 30%);
+    /* Button */
+    --s-btn-bg: #4070F4;
+    --s-btn-bg-hover: hsl(224, 89%, 55%);
+    --s-btn-shadow: 0 0 0 0.25rem rgba(64, 112, 244, 0.3);
+    --s-btn-txt: #ffffff;
+    /* Skills */
+    --skil-bg: rgba(62, 111, 244, 0.05);
+    --skil-card-bg: #ffffff;
+    --skil-card-txt: hsl(224, 56%, 8%);
+    --skil-card-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    --range-bg: hsl(0, 0%, 80%);
+    --range: rgb(64, 112, 244);
+    /* Contact */
+    --f-input-bg: rgba(64, 112, 244, 0.1);
+    --f-input-txt: hsl(0, 0%, 40%);
+    /* Footer */
+    --bg-footer: #4070F4;
+    --footer-txt: #ffffff;
+}
+
+
+/* _____________Dark mode_____________ */
+
+[data-theme="night"] {
+    --poppins: "Poppins", sans-serif;
+    --bg-page: #090F20;
+    --txt-color: white;
+    --nav-link: #ffffff;
+    --nav-shadow: 0 0.5px rgba(255, 255, 255, 0.3);
+    --sub-title: #ffffff;
+    --banner-txt: #4070F4;
+    --social-icon-txt: #ffffff;
+    --social-icon-txt-hover: #ffffff;
+    /* Button */
+    --s-btn-bg: #4070F4;
+    --s-btn-bg-hover: hsl(224, 89%, 55%);
+    --s-btn-shadow: 0 0 0.25rem rgba(64, 112, 244, 0.3);
+    --s-btn-txt: #ffffff;
+    /* Skills */
+    --skil-bg: rgba(62, 111, 244, 0.05);
+    --skil-card-bg: #ffffff;
+    --skil-card-txt: #090F20;
+    --skil-card-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    --range-bg: hsl(0, 0%, 80%);
+    --range: #4070F4;
+    /* Contact */
+    --f-input-bg: rgba(64, 112, 244, 0.1);
+    --f-input-txt: white;
+    /* Footer */
+    --bg-footer: #4070F4;
+    --footer-txt: #ffffff;
+}
