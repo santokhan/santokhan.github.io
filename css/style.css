@@ -593,7 +593,7 @@ footer .social__icon a:hover {
     .portfolio .img__container {
         width: 100%;
         margin: 2rem 0 0 0;
-        padding: 0 1rem;
+        padding: 0 2rem;
         display: flex !important;
         flex-direction: row !important;
         justify-content: center;
