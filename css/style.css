@@ -1,6 +1,92 @@
-@import "styles/var.css";
-
 /* _____________Default_____________ */
+
+:root {
+    --poppins: "Poppins", sans-serif;
+    --bg-page: #ffffff;
+    --txt-color: #090F20;
+    /* Navbar */
+    --nav-toggler-txt: #090F20;
+    --nav-toggler-bg: #ffffff;
+    --nav-toggler-border: #090f20;
+    --nav-toggler-focus: rgba(9, 15, 32, 0.1);
+    --nav-link: #090F20;
+    --nav-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    --sub-title: #555555;
+    --banner-txt: #4070F4;
+    --social-icon-txt: #090F20;
+    --social-icon-txt-hover: hsl(224, 56%, 30%);
+    /* Button */
+    --s-btn-bg: #4070F4;
+    --s-btn-bg-hover: hsl(224, 89%, 55%);
+    --s-btn-shadow: 0 0 0 0.25rem rgba(64, 112, 244, 0.3);
+    --s-btn-txt: #ffffff;
+    /* Skills */
+    --skil-bg: rgba(62, 111, 244, 0.05);
+    --skil-card-bg: #ffffff;
+    --skil-card-txt: hsl(224, 56%, 8%);
+    --skil-card-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    --range-bg: hsl(0, 0%, 80%);
+    --range: rgb(64, 112, 244);
+    /* Contact */
+    --f-input-bg: rgba(64, 112, 244, 0.1);
+    --f-input-txt: hsl(0, 0%, 40%);
+    /* Footer */
+    --bg-footer: #4070F4;
+    --footer-txt: #ffffff;
+}
+
+
+/* _____________Dark mode_____________ */
+
+[data-theme="night"] {
+    --poppins: "Poppins", sans-serif;
+    --bg-page: #090F20;
+    --txt-color: white;
+    /* Navbar */
+    --nav-toggler-txt: #ffffff;
+    --nav-toggler-bg: #090F20;
+    --nav-toggler-border: #ffffff;
+    --nav-toggler-focus: rgba(255, 255, 255, 0.1);
+    --nav-link: #ffffff;
+    --nav-shadow: 0 0.5px rgba(255, 255, 255, 0.3);
+    --sub-title: #ffffff;
+    --banner-txt: #4070F4;
+    --social-icon-txt: #ffffff;
+    --social-icon-txt-hover: #ffffff;
+    /* Button */
+    --s-btn-bg: #4070F4;
+    --s-btn-bg-hover: hsl(224, 89%, 55%);
+    --s-btn-shadow: 0 0 0.25rem rgba(64, 112, 244, 0.3);
+    --s-btn-txt: #ffffff;
+    /* Skills */
+    --skil-bg: rgba(62, 111, 244, 0.05);
+    --skil-card-bg: #ffffff;
+    --skil-card-txt: #090F20;
+    --skil-card-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+    --range-bg: hsl(0, 0%, 80%);
+    --range: #4070F4;
+    /* Contact */
+    --f-input-bg: rgba(64, 112, 244, 0.1);
+    --f-input-txt: white;
+    /* Footer */
+    --bg-footer: #4070F4;
+    --footer-txt: #ffffff;
+}
+
+
+/* ____________@Media Queries____________ */
+
+@media (max-width:1600px) and (min-width:1200px) {
+     :root {
+        --section-height: 100vh;
+    }
+}
+
+
+/* __________________________________:root end____________________________________ */
+
+
+/* _____________Global_____________ */
 
 * {
     font-family: var(--poppins);
@@ -33,27 +119,55 @@ header {
     box-shadow: var(--nav-shadow);
 }
 
-header .topbar {
+header .top__bar {
     width: 100%;
     max-width: 1180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 1rem;
 }
 
-.topbar .logo {
+.top__bar .logo {
     font-size: 1rem;
     cursor: pointer;
 }
 
-.topbar nav a {
+.top__bar .nav__container {
+    display: flex;
+    align-items: center;
+}
+
+.top__bar .nav__toggler {
+    display: block;
+    color: var(--nav-toggler-txt);
+    background: var(--nav-toggler-bg);
+    border-radius: 0.25rem;
+    border: 0.25px solid var(--nav-toggler-border);
+}
+
+.top__bar .nav__toggler:hover {
+    background: var(--nav-toggler-bg);
+    border: 0.25px solid var(--nav-toggler-border);
+}
+
+.top__bar .nav__toggler:focus {
+    background: var(--nav-toggler-bg);
+    box-shadow: 0 0 0 0.25rem var(--nav-toggler-focus);
+}
+
+.top__bar .nav__box {
+    display: none !important;
+}
+
+.top__bar nav .nav__link {
     text-decoration: none;
     padding: 0 1rem;
     font-size: 1rem;
     color: var(--nav-link);
 }
 
-.topbar nav a:hover {
+.top__bar nav .nav__link:hover {
     opacity: 0.7;
 }
 
@@ -90,11 +204,17 @@ main {
     background-color: var(--bg-page);
 }
 
+.section {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* _____________Home____________ */
 
 main .home {
-    padding-top: 64px;
+    padding: 64px 1rem 0 1rem;
     display: flex;
     height: var(--section-height);
     justify-content: center;
@@ -102,8 +222,8 @@ main .home {
 }
 
 .home .banner {
-    font-size: 3rem;
     font-weight: bold;
+    font-size: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -141,50 +261,8 @@ main .home {
     box-shadow: var(--s-btn-shadow);
 }
 
-.home .scroll__bottom {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    color: var(--txt-color);
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.home .scroll__bottom:hover {
-    color: var(--txt-color);
-}
-
-.home .scroll__bottom .mouse {
-    position: relative;
-    width: 16px;
-    height: 22px;
-    border-radius: 32px;
-    padding: 1.125rem 0.75rem;
-    border: 1px solid var(--txt-color);
-    margin-right: 0.5rem;
-}
-
-.home .scroll__bottom .mouse::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%) translateY(0);
-    top: 10%;
-    width: 2px;
-    height: 8px;
-    background-color: var(--banner-txt);
-    border-radius: 5px;
-    -webkit-animation: mouse 1s ease-in-out infinite;
-    animation: mouse 1s ease-in infinite;
-}
-
-@keyframes mouse {
-    0% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(2px);
-    }
+.home .scroll__buttom {
+    display: none;
 }
 
 .home .social__icon {
@@ -210,12 +288,19 @@ main .home {
 /* ___________About___________ */
 
 .section.about {
-    padding-top: 64px;
+    padding: 1rem 0 2rem 0;
     height: var(--section-height);
 }
 
+.about article {
+    margin: 1rem 0.5rem;
+}
+
 .about .santo__about {
+    margin: 1rem 0 2rem 0;
+    width: clamp(320px, 30vw, 500px);
     border-radius: 75px;
+    object-fit: cover;
 }
 
 .section .section-title,
@@ -240,7 +325,7 @@ main .home {
 /* ___________Skills___________ */
 
 .section.skills {
-    padding-top: 68px;
+    padding: 4.25rem 0 2.5rem 0;
     height: var(--section-height);
     background: var(--skil-bg);
 }
@@ -249,7 +334,7 @@ main .home {
 .front__designer,
 .back__end {
     margin: 1rem;
-    padding: 2rem 3rem;
+    padding: 2rem;
     border-radius: 1rem;
     font-size: 1.125rem;
     font-family: var(--poppins);
@@ -310,16 +395,34 @@ main .home {
 
 /* ___________Portfolio___________ */
 
-.section.portfolio {
+.portfolio {
     padding-top: 64px;
     height: var(--section-height);
+}
+
+.portfolio .img__container {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    padding: 0 1rem;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio .img__container>img {
+    margin: 0.5rem;
+    width: 100%;
+    object-fit: contain;
 }
 
 
 /* ___________Contact___________ */
 
 .section.contact {
-    padding-top: 64px;
+    margin: 4rem 0 0 0;
+    padding: 4rem 0.5rem 1.75rem 0.5rem;
     height: var(--section-height);
     display: flex;
     flex-direction: column;
@@ -327,9 +430,8 @@ main .home {
 }
 
 .contact form {
-    margin: 5rem 0 0 0;
+    margin: 2rem 0 0 0;
     padding: 1rem;
-    width: 500px;
 }
 
 .contact form input,
@@ -379,23 +481,22 @@ main .home {
 /* ___________Footer___________ */
 
 footer {
-    margin-top: 64px;
     background-color: var(--bg-footer);
-    height: 30vh;
     color: var(--footer-txt);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2.5rem 0;
 }
 
 footer .footer__logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 footer .social__icon {
-    margin: 2rem 0;
+    margin: 1.25rem 0;
 }
 
 footer .social__icon a {
@@ -439,5 +540,163 @@ footer .social__icon a:hover {
 @keyframes loader-rotate {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+
+/* ____________________________Media Queries________________________________ */
+
+@media (min-width:1200px) {
+    /* _____________Home____________ */
+    .home .banner {
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+    .top__bar {
+        margin: 0;
+    }
+    /* ___________Portfolio___________ */
+    .portfolio {
+        position: relative;
+        padding-top: 64px;
+        height: var(--section-height);
+        max-width: 1140px;
+    }
+    /* ___________Contact___________ */
+}
+
+@media (min-width:992px) {
+    .top__bar .nav__box {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+    }
+    .top__bar .nav__toggler {
+        display: none;
+    }
+    /* ___________Contact___________ */
+    .contact form {
+        margin: 5rem 0 0 0;
+    }
+}
+
+@media (min-width:768px) {
+    /* ___________Portfolio___________ */
+    .portfolio {
+        padding-top: 64px;
+        height: var(--section-height);
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portfolio .img__container {
+        width: 100%;
+        margin: 2rem 0 0 0;
+        padding: 0 1rem;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .portfolio .img__container>img {
+        margin: 0.5rem;
+        width: 48%;
+        object-fit: contain;
+    }
+    /* ___________Contact___________ */
+    .contact form {
+        margin: 4rem 0 0 0;
+    }
+}
+
+@media (min-width:572px) {
+    /* ___________Skills___________ */
+    .front__end,
+    .front__designer,
+    .back__end {
+        margin: 1rem;
+    }
+    /* ___________Contact___________ */
+    .contact form {
+        margin: 4rem 0 0 0;
+        width: 500px;
+    }
+    /* ___________Footer___________ */
+    footer {
+        margin-top: 64px;
+    }
+    footer .footer__logo {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    /* ____________Home____________ */
+    .home .scroll__buttom {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        color: var(--txt-color);
+        font-weight: 500;
+        text-decoration: none;
+    }
+    .home .scroll__buttom:hover {
+        color: var(--txt-color);
+    }
+    .home .scroll__buttom .mouse {
+        position: relative;
+        width: 16px;
+        height: 22px;
+        border-radius: 32px;
+        padding: 1.125rem 0.75rem;
+        border: 1px solid var(--txt-color);
+        margin-right: 0.5rem;
+    }
+    .home .scroll__buttom .mouse::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(0);
+        top: 10%;
+        width: 2px;
+        height: 8px;
+        background-color: var(--banner-txt);
+        border-radius: 5px;
+        -webkit-animation: mouse 1s ease-in-out infinite;
+        animation: mouse 1s ease-in infinite;
+    }
+    @keyframes mouse {
+        0% {
+            transform: translateX(-50%) translateY(0);
+        }
+        50% {
+            transform: translateX(-50%) translateY(2px);
+        }
+    }
+    /* __________________About__________________ */
+    .section.about {
+        padding-top: 64px;
+        height: var(--section-height);
+    }
+    .about article {
+        margin: 6rem 0;
+    }
+    .about .santo__about {
+        margin: 0;
+    }
+    /* __________________Footer__________________ */
+    .section.contact {
+        padding-top: 4rem 0 0 0;
+    }
+    /* __________________Footer__________________ */
+    footer {
+        padding: 2.5rem 1rem 2rem 1rem;
+    }
+    footer .footer__logo {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    footer .social__icon {
+        margin: 2rem 0;
     }
 }
