@@ -19,7 +19,7 @@ Click here to visit my repository page https://santokhan.github.io/
 
 
 Preview: 
-![GitHub Logo](/images/santo-2.png)
+https://www.pinterest.com.mx/santo_khan/_created/
 
 
 | Social Media | URL |
