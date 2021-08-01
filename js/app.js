@@ -6,14 +6,17 @@
 
     function toggleFunc() {
         if (!onclick) {
-            icon.classList.replace("fa-sun", "fa-moon");
+            /** icon.classList.replace("fa-sun", "fa-moon"); */
+            toggler.innerHTML = `<i class="fas fa-moon"></i>`;
             document.body.setAttribute("data-theme", "night");
             onclick = true;
         } else {
-            icon.classList.replace("fa-moon", "fa-sun");
+            // icon.classList.replace("fa-moon", "fa-sun");
+            toggler.innerHTML = `<i class="fas fa-sun"></i>`;
             document.body.setAttribute("data-theme", "day");
             onclick = false;
         }
+        console.log(icon);
     }
 
     toggler.addEventListener("click", toggleFunc);
