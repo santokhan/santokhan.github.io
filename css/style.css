@@ -74,6 +74,7 @@
   /* Footer */
   --bg-footer: #4070f4;
   --footer-txt: #ffffff;
+  transition: 0.25s ease-out;
 }
 
 /* ____________@Media Queries____________ */
@@ -125,7 +126,8 @@ header {
 
 header .top__bar {
   width: 100%;
-  max-width: 1140px;
+  /* max-width: 1140px; */
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,17 +145,30 @@ header .top__bar {
 }
 
 .top__bar .nav__toggler {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   color: var(--nav-toggler-txt);
   background: var(--nav-toggler-bg);
   border-radius: 0.25rem;
-  border: 0.25px solid var(--nav-toggler-border);
+  /* border: 0.25px solid var(--nav-toggler-border); */
+  border: none;
   margin-right: 0.5rem;
+  padding: 0;
+  transition: 0.25s ease-out;
+}
+
+.nav__toggler svg {
+  fill: none;
+}
+
+.nav__toggler svg path {
+  stroke: var(--txt-color);
 }
 
 .top__bar .nav__toggler:hover {
   background: var(--nav-toggler-bg);
-  border: 0.25px solid var(--nav-toggler-border);
+  /* border: 0.25px solid var(--nav-toggler-border); */
 }
 
 .top__bar .nav__toggler:focus {
@@ -251,7 +266,7 @@ main {
 /* _____________Home____________ */
 
 main .home {
-  padding: 64px 0 0 0;
+  padding: 4rem 0 0 0;
   height: var(--section-height);
   display: flex;
   flex-direction: column;
@@ -277,7 +292,7 @@ main .home {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .home .banner {
@@ -349,7 +364,7 @@ main .home {
 /* ___________About___________ */
 
 .about {
-  padding: 1rem 0 2rem 0;
+  padding: 0 0 2rem 0;
   height: var(--section-height);
 }
 
@@ -361,7 +376,7 @@ main .home {
 }
 
 .about .about__row {
-  margin-top: 4rem;
+  margin-top: 0;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -387,6 +402,10 @@ main .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 0.25px solid var(--txt-color);
+  padding: 0.75rem;
+  border-radius: 2rem;
+  margin: 0.5rem 0;
 }
 
 .info__box .info {
@@ -409,11 +428,20 @@ main .home {
   text-align: justify;
 }
 
+.big-txt {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1;
+  float: left;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+}
+
 /* ___________Skills___________ */
 
 .skills {
-  padding: 4.25rem 0 2.5rem 0;
-  height: var(--section-height);
+  padding: 2.25rem 0 2.5rem 0;
+  min-height: var(--section-height);
   background: var(--skil-bg);
 }
 
@@ -430,7 +458,7 @@ main .home {
   width: 50%;
   min-width: 340px;
   flex: 100%;
-  padding: 0.5rem;
+  padding: 0;
 }
 .d-none {
   display: none;
@@ -465,7 +493,9 @@ main .home {
   display: flex;
   justify-content: space-between;
 }
-
+.skil__title {
+  font-weight: 500;
+}
 .skills .skil__box {
   padding-top: 1rem;
 }
@@ -477,7 +507,9 @@ main .home {
 .skills .fab {
   margin-right: 0.25rem;
 }
-
+.skil__txt {
+  margin: 0 0.25rem;
+}
 .skills .range {
   margin: 0.25rem 0 0 0;
   position: relative;
@@ -498,17 +530,17 @@ main .home {
   border-radius: 0.5rem;
 }
 
-/* ___________Work___________ */
+/* ___________Work or Service___________ */
 
 .section.work {
-  padding-top: 68px;
+  padding-top: 4rem;
   height: var(--section-height);
 }
 
 /* ___________Portfolio___________ */
 
 .portfolio {
-  padding-top: 64px;
+  padding-top: 3rem;
   height: var(--section-height);
 }
 
@@ -531,7 +563,7 @@ main .home {
 /* ___________Contact___________ */
 
 .contact {
-  margin-top: 4rem;
+  margin-top: 3rem;
   padding: 4rem 0.5rem 1.75rem 0.5rem;
   height: var(--section-height);
   display: flex;
@@ -642,7 +674,7 @@ footer .social__icon a:hover {
   -webkit-animation: loader-rotate 2s infinite;
   animation: loader-rotate 2s infinite;
   border-radius: 50%;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 @keyframes loader-rotate {
@@ -652,105 +684,6 @@ footer .social__icon a:hover {
 }
 
 /* ____________________________Media Queries________________________________ */
-
-@media (min-width: 1200px) {
-  /* _____________Home____________ */
-  .home .banner {
-    font-weight: bold;
-    font-size: 3rem;
-    margin-bottom: 3rem;
-  }
-  .top__bar {
-    margin: 0;
-  }
-  /* ___________Portfolio___________ */
-  .portfolio {
-    position: relative;
-    padding-top: 64px;
-    height: var(--section-height);
-    max-width: 1140px;
-  }
-  /* ___________Contact___________ */
-}
-
-@media (min-width: 992px) {
-  /* ___________Header___________ */
-
-  .top__bar .nav__toggler {
-    display: none;
-    color: var(--nav-toggler-txt);
-    background: var(--nav-toggler-bg);
-    border-radius: 0.25rem;
-    border: 0.25px solid var(--nav-toggler-border);
-    margin-right: 0.5rem;
-  }
-  .top__bar .nav__box {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-  }
-  .top__bar .nav__toggler {
-    display: none;
-  }
-  /* ___________Contact___________ */
-  .contact form {
-    margin: 5rem 0 0 0;
-  }
-}
-
-@media (min-width: 768px) {
-  /* _____________Home____________ */
-  main .home {
-    padding: 64px 0 0 0;
-    height: var(--section-height);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .home__row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .home__row > .home__col:first-child {
-    flex: 0 0 auto;
-    width: 41.6666666667%;
-  }
-  .home__row > .home__col:last-child {
-    flex: 0 0 auto;
-    width: 58.3333333333%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  /* ___________Portfolio___________ */
-  .portfolio {
-    padding-top: 64px;
-    height: var(--section-height);
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .portfolio .section__sub__title {
-    margin-bottom: 1rem;
-  }
-  .portfolio .img__container {
-    width: 100%;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-  }
-  .portfolio .img__container > img {
-    flex: 1;
-    margin: 0.5rem;
-    object-fit: contain;
-  }
-  /* ___________Contact___________ */
-  .contact form {
-    margin: 4rem 0 0 0;
-  }
-}
 
 @media (min-width: 572px) {
   /* ________________Main________________ */
@@ -875,26 +808,6 @@ footer .social__icon a:hover {
     flex: 0 0 auto;
   }
 
-  /* ___________Skills___________ */
-  .skills {
-    padding: 4.25rem 0 2.5rem 0;
-    height: var(--section-height);
-    background: var(--skil-bg);
-  }
-  .skills .skil__row {
-    width: 100%;
-    padding: 1rem 0.5rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .skil__row > .skil__col {
-    padding: 0.5rem;
-    width: 50%;
-    flex: 0 0 auto;
-  }
-
   /* ___________Contact___________ */
   .section.contact {
     padding-top: 4rem 0 0 0;
@@ -918,4 +831,103 @@ footer .social__icon a:hover {
   footer .social__icon {
     margin: 2rem 0;
   }
+}
+
+@media (min-width: 768px) {
+  /* _____________Home____________ */
+  main .home {
+    padding: 4rem 0 0 0;
+    height: var(--section-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home__row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .home__row > .home__col:first-child {
+    flex: 0 0 auto;
+    width: 41.6666666667%;
+  }
+  .home__row > .home__col:last-child {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* ___________Portfolio___________ */
+  .portfolio {
+    padding-top: 4rem;
+    height: var(--section-height);
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .portfolio .section__sub__title {
+    margin-bottom: 1rem;
+  }
+  .portfolio .img__container {
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio .img__container > img {
+    flex: 1;
+    margin: 0.5rem;
+    object-fit: contain;
+  }
+  /* ___________Contact___________ */
+  .contact form {
+    margin: 4rem 0 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  /* ___________Header___________ */
+
+  .top__bar .nav__toggler {
+    display: none;
+    color: var(--nav-toggler-txt);
+    background: var(--nav-toggler-bg);
+    border-radius: 0.25rem;
+    /* border: 0.25px solid var(--nav-toggler-border); */
+    margin-right: 0.5rem;
+  }
+  .top__bar .nav__box {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+  }
+  .top__bar .nav__toggler {
+    display: none;
+  }
+  /* ___________Contact___________ */
+  .contact form {
+    margin: 5rem 0 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* _____________Home____________ */
+  .home .banner {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .top__bar {
+    margin: 0;
+  }
+  /* ___________Portfolio___________ */
+  .portfolio {
+    position: relative;
+    padding-top: 4rem;
+    height: var(--section-height);
+    max-width: 1140px;
+  }
+  /* ___________Contact___________ */
 }

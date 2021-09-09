@@ -93,9 +93,11 @@ function showHide(e) {
     if (!istoggle) {
         target.className = "nav__box__expand";
         istoggle = true;
+        e.style.transform = "rotate(-45deg)";
     } else {
         target.className = "nav__box";
         istoggle = false;
+        e.style.transform = "rotate(0deg)";
     }
 }
 
