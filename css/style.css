@@ -127,7 +127,7 @@ header {
 header .top__bar {
   width: 100%;
   /* max-width: 1140px; */
-  padding: 0 1rem;
+  padding: 0 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -923,6 +923,7 @@ footer .social__icon a:hover {
   }
   .top__bar {
     margin: 0;
+    padding: 0 1rem; /* Will be 0 in sm*/
   }
   /* ___________Portfolio___________ */
   .portfolio {
