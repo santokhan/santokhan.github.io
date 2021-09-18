@@ -793,7 +793,7 @@ footer .social__icon a:hover {
   .skills {
     padding: 4.25rem 0 2.5rem 0;
     /* height: var(--section-height); */
-    min-height: var(--section-height);
+    /* min-height: var(--section-height); */
     background: var(--skil-bg);
   }
   .skills .skil__row {
@@ -864,7 +864,7 @@ footer .social__icon a:hover {
   /* ___________Portfolio___________ */
   .portfolio {
     padding-top: 4rem;
-    height: var(--section-height);
+    /* height: var(--section-height); */
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
@@ -928,7 +928,7 @@ footer .social__icon a:hover {
   .portfolio {
     position: relative;
     padding-top: 4rem;
-    height: var(--section-height);
+    /* min-height: var(--section-height); */
     max-width: 1140px;
   }
   /* ___________Contact___________ */
