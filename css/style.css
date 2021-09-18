@@ -204,6 +204,7 @@ header .top__bar {
   padding: 0 1rem;
   font-size: 1rem;
   color: var(--nav-link);
+  text-transform: capitalize !important;
 }
 
 .top__bar nav .nav__link:hover {
@@ -267,7 +268,7 @@ main {
 
 main .home {
   padding: 4rem 0 0 0;
-  height: var(--section-height);
+  max-height: var(--section-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,7 +366,7 @@ main .home {
 
 .about {
   padding: 0 0 2rem 0;
-  height: var(--section-height);
+  max-height: var(--section-height);
 }
 
 .section .section__title,
@@ -534,14 +535,14 @@ main .home {
 
 .section.work {
   padding-top: 4rem;
-  height: var(--section-height);
+  max-height: var(--section-height);
 }
 
 /* ___________Portfolio___________ */
 
 .portfolio {
   padding-top: 3rem;
-  height: var(--section-height);
+  max-height: var(--section-height);
 }
 
 .portfolio .img__container {
@@ -565,7 +566,7 @@ main .home {
 .contact {
   margin-top: 3rem;
   padding: 4rem 0.5rem 1.75rem 0.5rem;
-  height: var(--section-height);
+  max-height: var(--section-height);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -755,7 +756,7 @@ footer .social__icon a:hover {
 
   .about {
     padding-top: 64px;
-    height: var(--section-height);
+    max-height: var(--section-height);
   }
   .title {
     font-size: 2.5rem;
@@ -791,7 +792,8 @@ footer .social__icon a:hover {
   /* ___________Skills___________ */
   .skills {
     padding: 4.25rem 0 2.5rem 0;
-    height: var(--section-height);
+    /* height: var(--section-height); */
+    min-height: var(--section-height);
     background: var(--skil-bg);
   }
   .skills .skil__row {
@@ -837,7 +839,7 @@ footer .social__icon a:hover {
   /* _____________Home____________ */
   main .home {
     padding: 4rem 0 0 0;
-    height: var(--section-height);
+    max-height: var(--section-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
