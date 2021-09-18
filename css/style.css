@@ -442,7 +442,7 @@ main .home {
 
 .skills {
   padding: 2.25rem 0 2.5rem 0;
-  min-height: var(--section-height);
+  /* min-height: var(--section-height); */
   background: var(--skil-bg);
 }
 
@@ -569,7 +569,7 @@ main .home {
   max-height: var(--section-height);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center !important;
 }
 
 .contact form {
