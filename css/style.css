@@ -537,6 +537,9 @@ main .home {
   padding-top: 4rem;
   max-height: var(--section-height);
 }
+.section.work > .web > img {
+  border-radius: 1rem;
+}
 
 /* ___________Portfolio___________ */
 
