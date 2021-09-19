@@ -949,9 +949,9 @@ main .home {
     /* min-height: var(--section-height); */
     max-width: 1140px;
   }
-
   .santo__btn {
     max-width: 160px;
+    font-size: 1rem;
   }
   /* ___________Contact___________ */
 }

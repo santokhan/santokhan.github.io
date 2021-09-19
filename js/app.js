@@ -106,6 +106,16 @@ document.querySelector("#navToggler").addEventListener("click", function (e) {
     showHide(this);
 });
 
+{
+    function dropdownHideClickOutside() {
+        function triggerFunc(e) {
+            let button = e.path;
+            console.log(button[2]);
+        }
+        window.addEventListener("click", triggerFunc);
+    } //dropdownHideClickOutside();
+}
+
 
 /** _____________Skill_____________ */
 const skilRangeValue = document.querySelectorAll(".skil__item .range__value");
