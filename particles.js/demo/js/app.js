@@ -129,13 +129,13 @@ const json = {
 }
 
 let theme = localStorage.getItem("data-theme");
-console.log(theme);
+//console.log(theme);
 (function () {
   if (theme === "day") {
     json["particles"]["color"]["value"] = "#000000";
     json["particles"]["line_linked"]["color"] = "#000000";
     let value = json["particles"]["color"]["value"], line = json["particles"]["line_linked"]["color"];
-    console.log(value, line);
+    //console.log(value, line);
     particlesJS('particles-js', json);
   } else if (theme === "night") {
     json["particles"]["color"]["value"] = "#ffffff";
