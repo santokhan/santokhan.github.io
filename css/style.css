@@ -324,7 +324,7 @@ main .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 160px;
+  max-width: 140px;
   /* z-index: 520; */
 }
 
@@ -332,6 +332,7 @@ main .home {
   fill: #ffffff;
   width: 20px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -947,6 +948,10 @@ main .home {
     padding-top: 4rem;
     /* min-height: var(--section-height); */
     max-width: 1140px;
+  }
+
+  .santo__btn {
+    max-width: 160px;
   }
   /* ___________Contact___________ */
 }
