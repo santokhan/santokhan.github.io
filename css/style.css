@@ -109,7 +109,7 @@ body[data-theme="night"] {
 
 /* _____________Header_____________ */
 
-header {
+.app__header {
   z-index: 110;
   position: fixed;
   width: 100%;
@@ -124,7 +124,7 @@ header {
   box-shadow: var(--nav-shadow);
 }
 
-header .top__bar {
+.app__header .top__bar {
   width: 100%;
   /* max-width: 1140px; */
   padding: 0 0;
@@ -272,6 +272,8 @@ main .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 10;
 }
 
 .home__row {
@@ -281,6 +283,7 @@ main .home {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  z-index: 11;
 }
 
 .home__row > .home__col:first-child {
@@ -318,15 +321,18 @@ main .home {
   cursor: pointer;
   outline: none;
   border: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 160px;
+  /* z-index: 520; */
 }
 
-.messenger {
+.santo__btn .messenger {
   fill: #ffffff;
   width: 20px;
-}
-
-.santo__btn > span {
-  margin-right: 0.25rem;
+  display: flex;
+  align-items: center;
 }
 
 .santo__btn:hover {
@@ -339,6 +345,10 @@ main .home {
   box-shadow: var(--s-btn-shadow);
 }
 
+.home .banner__img {
+  -webkit-user-drag: none;
+}
+
 .home .scroll__button {
   display: none;
 }
@@ -347,6 +357,7 @@ main .home {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
+  /* z-index: 512; */
 }
 
 .home .social__icon .icon {
@@ -360,7 +371,7 @@ main .home {
 .home .social__icon .icon:hover {
   margin: 0.5rem 0;
   color: var(--social-icon-txt-hover);
-  transform: translateY(-4px);
+  transform: translateY(-5px);
 }
 
 /* ___________About___________ */
@@ -397,6 +408,7 @@ main .home {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1rem;
 }
 
 .about .info__box {
@@ -538,7 +550,7 @@ main .home {
   padding-top: 4rem;
   max-height: var(--section-height);
 }
-.section.work > .web > img {
+.section.work .web .web__img {
   border-radius: 1rem;
 }
 
@@ -626,7 +638,7 @@ main .home {
 
 /* ___________Footer___________ */
 
-footer {
+.app__footer {
   background-color: var(--bg-footer);
   color: var(--footer-txt);
   display: flex;
@@ -636,16 +648,16 @@ footer {
   padding: 2.5rem 0;
 }
 
-footer .footer__logo {
+.app__footer .footer__logo {
   font-size: 2rem;
   font-weight: 500;
 }
 
-footer .social__icon {
+.app__footer .social__icon {
   margin: 1.25rem 0;
 }
 
-footer .social__icon a {
+.app__footer .social__icon a {
   text-decoration: none;
   color: var(--footer-txt);
   padding: 0.5rem;
@@ -653,7 +665,7 @@ footer .social__icon a {
   font-size: 1.25rem;
 }
 
-footer .social__icon a:hover {
+.app__footer .social__icon a:hover {
   text-decoration: none;
   color: var(--footer-txt);
   padding: 0.5rem;
@@ -708,6 +720,7 @@ footer .social__icon a:hover {
     color: var(--txt-color);
     font-weight: 500;
     text-decoration: none;
+    z-index: 511;
   }
   .home__row {
     width: 100%;
@@ -824,24 +837,24 @@ footer .social__icon a:hover {
   }
 
   /* ___________Footer___________ */
-  footer {
+  .app__footer {
     margin-top: 64px;
   }
-  footer {
+  .app__footer {
     padding: 2.5rem 1rem 2rem 1rem;
   }
-  footer .footer__logo {
+  .app__footer .footer__logo {
     font-size: 2rem;
     font-weight: 600;
   }
-  footer .social__icon {
+  .app__footer .social__icon {
     margin: 2rem 0;
   }
 }
 
 @media (min-width: 768px) {
   /* _____________Home____________ */
-  main .home {
+  .app__main .home {
     padding: 4rem 0 0 0;
     max-height: var(--section-height);
     display: flex;
@@ -895,7 +908,6 @@ footer .social__icon a:hover {
 
 @media (min-width: 992px) {
   /* ___________Header___________ */
-
   .top__bar .nav__toggler {
     display: none;
     color: var(--nav-toggler-txt);
