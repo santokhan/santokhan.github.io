@@ -83,7 +83,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: auto;
 }
 ::-webkit-scrollbar-track {
   background: var(--bg-page);
@@ -618,21 +618,6 @@ main .home {
 .grid__item .grid__des .grid__title {
   font-size: 1rem;
   font-weight: 500;
-}
-
-.angle__link {
-  font-size: 3rem;
-  position: absolute;
-  top: 50%;
-  right: -6vw;
-}
-
-.angle__link > a {
-  color: #555555;
-}
-
-.angle__link > a:hover {
-  color: #aaaaaa;
 }
 
 /* .portfolio .img__container {
