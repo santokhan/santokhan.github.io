@@ -63,13 +63,6 @@
 }
 
 
-/** Most important part */
-(function () {
-    const loaderBox = document.querySelector(".loader__box");
-    setTimeout(() => {
-        loaderBox.style.display = "none";
-    }, 1000);
-})();
 
 /** Navbar showHide */
 function touchWindowHideNav() {
@@ -145,3 +138,20 @@ for (let i = 0; i < skilRangeValue.length; i++) {
     });
 })();
 
+{
+    function jsonData(api) {
+        const url = api, xhttp = new XMLHttpRequest();
+
+        function request() {
+            if (xhttp.readyState == 4 && xhttp.status == 200) {
+                console.log(response);
+            }
+        } xhttp.onreadystatechange = request();
+
+        xhttp.open("GET", url, true);
+        xhttp.send();
+        console.log(xhttp);
+    }
+    //jsonData(`${window.location.href}/app.json`);
+    jsonData(`app.json`);
+}

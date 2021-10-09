@@ -1,6 +1,6 @@
 /* _____________Default_____________ */
-
-:root {
+:root,
+[data-theme="day"] {
   --poppins: "Poppins", sans-serif;
   --bg-page: #ffffff;
   --txt-color: #090f20;
@@ -36,9 +36,7 @@
   --bg-footer: #4070f4;
   --footer-txt: #ffffff;
 }
-
 /* _____________Dark mode_____________ */
-
 [data-theme="night"] {
   --poppins: "Poppins", sans-serif;
   --bg-page: #090f20;
@@ -78,17 +76,25 @@
 }
 
 /* ____________@Media Queries____________ */
-
 @media (max-width: 1600px) and (min-width: 1200px) {
   :root {
     --section-height: 100vh;
   }
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--txt-color);
+  border-radius: 1rem;
+}
+
 /* __________________________________:root end____________________________________ */
-
 /* _____________Global_____________ */
-
 *,
 *::before,
 *::after {
@@ -101,10 +107,12 @@ body {
   scroll-behavior: smooth;
 }
 
+html,
+body,
 body[data-theme="day"],
 body[data-theme="night"] {
   color: var(--txt-color);
-  background-color: var(--bg-page);
+  background-color: var(--bg-page) !important;
 }
 
 /* _____________Header_____________ */
@@ -545,24 +553,89 @@ main .home {
   border-radius: 0.5rem;
 }
 
-/* ___________Work or Service___________ */
-
-.section.work {
-  padding-top: 4rem;
-  max-height: var(--section-height);
-}
-.section.work .web .web__img {
-  border-radius: 1rem;
-}
-
 /* ___________Portfolio___________ */
 
 .portfolio {
-  padding-top: 3rem;
-  max-height: var(--section-height);
+  padding: 3rem 0;
 }
 
-.portfolio .img__container {
+.portfolio .grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.grid .grid__item {
+  padding: 1rem;
+}
+.grid__item .grid__top {
+  border-radius: 0.75rem;
+  border: 0.25px groove rgba(0, 0, 0, 0.3);
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.grid__item .grid__top:hover > .effect {
+  font-size: 1.5rem;
+  color: #555;
+  transform: scale(1);
+  border-radius: 0;
+}
+
+.grid__top img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.grid__item .effect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  transform-origin: 0 0;
+  transform: scale(0);
+  border-radius: 0 0 3rem 0;
+  transition: transform 0.3s ease-out;
+}
+
+.grid__item .grid__des {
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 0;
+}
+
+.grid__item .grid__des .grid__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.angle__link {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  right: -6vw;
+}
+
+.angle__link > a {
+  color: #555555;
+}
+
+.angle__link > a:hover {
+  color: #aaaaaa;
+}
+
+/* .portfolio .img__container {
   width: 100%;
   padding: 0 1rem;
   display: flex !important;
@@ -576,13 +649,38 @@ main .home {
   width: 100%;
   margin: 0.5rem;
   object-fit: contain;
+} */
+
+/* ___________Work or Service___________ */
+
+.work {
+  padding: 1rem;
+  background-color: #000;
+  color: #ffffff;
 }
+.work summary {
+  color: #ffffff;
+}
+.work .web {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+  padding: 1rem;
+}
+.work .section__header .title,
+.work .section__header .slogun {
+  color: #ffffff;
+}
+
+/* .section.work .web .web__img {
+  border-radius: 1rem;
+} */
 
 /* ___________Contact___________ */
 
 .contact {
   margin-top: 3rem;
-  padding: 4rem 0.5rem 1.75rem 0.5rem;
+  padding: 0 0.5rem 1.75rem 0.5rem;
   max-height: var(--section-height);
   display: flex;
   flex-direction: column;
@@ -675,7 +773,8 @@ main .home {
 
 /* _____________Page Loader_____________ */
 
-.loader__box {
+/* I have added these css into loader.js */
+/* .loader__box {
   z-index: 1000;
   position: fixed;
   top: 0;
@@ -686,7 +785,7 @@ main .home {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .loader__box .loader {
   -webkit-animation: loader-rotate 2s infinite;
@@ -828,12 +927,25 @@ main .home {
     flex: 0 0 auto;
   }
 
+  /* __________Portfolio__________ */
+  .portfolio .grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .grid .grid__item {
+    padding: 0;
+  }
+
   /* ___________Contact___________ */
   .section.contact {
     padding-top: 4rem 0 0 0;
   }
   .contact form {
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
     width: 500px;
   }
 
@@ -890,7 +1002,7 @@ main .home {
   .portfolio .section__sub__title {
     margin-bottom: 1rem;
   }
-  .portfolio .img__container {
+  /* .portfolio .img__container {
     width: 100%;
     padding: 0 1rem;
     display: flex;
@@ -900,10 +1012,10 @@ main .home {
     flex: 1;
     margin: 0.5rem;
     object-fit: contain;
-  }
+  } */
   /* ___________Contact___________ */
   .contact form {
-    margin: 4rem 0 0 0;
+    margin: 3rem 0 0 0;
   }
 }
 
@@ -925,10 +1037,6 @@ main .home {
   .top__bar .nav__toggler {
     display: none;
   }
-  /* ___________Contact___________ */
-  .contact form {
-    margin: 5rem 0 0 0;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -948,6 +1056,17 @@ main .home {
     padding-top: 4rem;
     /* min-height: var(--section-height); */
     max-width: 1140px;
+  }
+  .portfolio .grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .grid .grid__item {
+    padding: 0;
   }
   .santo__btn {
     max-width: 160px;

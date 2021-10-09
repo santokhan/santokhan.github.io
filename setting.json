@@ -1,0 +1,7 @@
+{
+  "css": { "bootstrap": true, "fontawesome": true },
+  "api": { "google": { "analytics": true }, "fb-messenger": true },
+  "default-theme": "day",
+  "javascript": { "particle": true, "jquery": false, "scrollreveal": true },
+  "link-share": true
+}
