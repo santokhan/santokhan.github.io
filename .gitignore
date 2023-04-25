@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Santo
+css/
+audio/
+js/
+pages/
+svg/
