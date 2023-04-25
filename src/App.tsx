@@ -8,6 +8,7 @@ import About from "./views/About";
 import Services from "./views/Services";
 import Skills from "./views/Skills";
 import Contact from "./views/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/skills" Component={Skills}></Route>
         <Route path="/contact" Component={Contact}></Route>
       </Routes>
+
+      <Footer></Footer>
     </div>
   );
 }

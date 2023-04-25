@@ -6,7 +6,7 @@
     padding: 0;
   }
 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: auto;
   }
 
@@ -15,8 +15,8 @@
     border-radius: 1rem;
   }
   ::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
+    background: transparent;
+  } */
 }
 
 @tailwind components;
