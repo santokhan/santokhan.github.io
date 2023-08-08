@@ -1,0 +1,16 @@
+@tailwind base;
+
+
+@layer base {
+    html {
+        @apply bg-default-900 text-gray-200
+    }
+
+    a,
+    button {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;
