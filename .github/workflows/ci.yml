@@ -1,0 +1,58 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+
+      - name: Configure SSH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" | sed 's/\\n/\n/g' > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+          # Ensure SERVER_IP is valid and fetch keys
+          if [ -z "$SERVER_IP" ]; then
+            echo "SERVER_IP is not set"; exit 1
+          fi
+
+          ssh-keyscan -H "$SERVER_IP" >> ~/.ssh/known_hosts
+          echo "Known hosts updated."
+          
+      - name: Install rsync
+        run: |
+          sudo apt update
+          sudo apt install -y rsync
+
+      - name: Deploy to server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SERVER_USER: ${{ secrets.SERVER_USER }}
+          SERVER_IP: ${{ secrets.SERVER_IP }}
+
+        run: |
+          rsync -avz --delete ./dist/ $SERVER_USER@$SERVER_IP:/var/www/santokhan.dev/dist
+          ssh $SERVER_USER@$SERVER_IP "sudo service nginx reload"
